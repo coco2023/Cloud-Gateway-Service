@@ -12,7 +12,16 @@ spring:
           uri: lb://USER-AUTH-SERVICE
           predicates:
             - Path=/USER-AUTH-SERVICE/**
-        - id: PAYMENT-SERVICE
-          uri: lb://PAYMENT-SERVICE
+        - id: PAYMENT-ALIPAY-SERVICE
+          uri: lb://PAYMENT-ALIPAY-SERVICE
           predicates:
-            - Path=/PAYMENT-SERVICE/**
+            - Path=/PAYMENT-ALIPAY-SERVICE/**
+        - id: PAYMENT-PAYPAL-SERVICE
+          uri: lb://PAYMENT-PAYPAL-SERVICE
+          predicates:
+            - Path=/PAYMENT-PAYPAL-SERVICE/**
+        - id: PAYMENT-STRIPE-SERVICE
+          uri: lb://PAYMENT-STRIPE-SERVICE
+          predicates:
+            - Path=/PAYMENT-STRIPE-SERVICE/**
+

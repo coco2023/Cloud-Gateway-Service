@@ -1,3 +1,11 @@
+# Refer
+[1] https://github.com/coco2023/QuickMall-eCommerce/tree/main/3%20EcommerceBackend
+
+[2] ChatGPT: https://chat.openai.com/share/2cbbd05f-06c4-4933-a29a-1ccd7b2803e5
+
+# Eureka
+![Eureka-services](doc/Eureka-services.png)
+
 # Cloud Service Registry @EnableEurekaClient
 These dependencies are used in Spring Boot applications, and their names in the Spring Initializr generally align with their artifact IDs. Here's a breakdown of each:
 
