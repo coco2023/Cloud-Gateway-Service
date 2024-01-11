@@ -1,0 +1,18 @@
+
+server:
+  port: 9191
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: USER-AUTH-SERVICE
+          uri: lb://USER-AUTH-SERVICE
+          predicates:
+            - Path=/USER-AUTH-SERVICE/**
+        - id: PAYMENT-SERVICE
+          uri: lb://PAYMENT-SERVICE
+          predicates:
+            - Path=/PAYMENT-SERVICE/**
