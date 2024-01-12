@@ -24,4 +24,16 @@ spring:
           uri: lb://PAYMENT-STRIPE-SERVICE
           predicates:
             - Path=/PAYMENT-STRIPE-SERVICE/**
+        - id: PRODUCT-SERVICE
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/PRODUCT-SERVICE/**
+        - id: SALES-ORDER-SERVICE
+          uri: lb://SALES-ORDER-SERVICE
+          predicates:
+            - Path=/SALES-ORDER-SERVICE/**
+#        - id: SUPPLIER-SERVICE
+#          uri: lb://SUPPLIER-SERVICE
+#          predicates:
+#            - Path=/SUPPLIER-SERVICE/**
 
